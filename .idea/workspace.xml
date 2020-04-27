@@ -3,6 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="d12768b9-4be1-4f23-bbd3-69d3570f4f69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_spread.png" beforeDir="false" afterPath="$PROJECT_DIR$/combined_spread.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gauss_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gauss_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infected_cells.png" beforeDir="false" afterPath="$PROJECT_DIR$/infected_cells.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.aux" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.fls" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_plt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_total_removed_plt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/population_dist.png" beforeDir="false" afterPath="$PROJECT_DIR$/population_dist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_total_removed_plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virus_spread.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/virus_spread.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,138 +55,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="SEIR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -194,6 +100,8 @@
       <workItem from="1586594865886" duration="86000" />
       <workItem from="1587641498749" duration="2523000" />
       <workItem from="1587800656658" duration="831000" />
+      <workItem from="1587815700229" duration="215000" />
+      <workItem from="1587985506619" duration="8170000" />
     </task>
     <servers />
   </component>
@@ -221,16 +129,16 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1874" height="124" key="GridCell.Tab.0.right/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585677211343" />
-    <state x="503" y="197" key="SettingsEditor" timestamp="1585785634956">
-      <screen x="71" y="27" width="1849" height="1053" />
+    <state x="2369" y="174" key="SettingsEditor" timestamp="1587996190183">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2369" y="174" key="SettingsEditor/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585706041042" />
+    <state x="2369" y="174" key="SettingsEditor/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587996190183" />
     <state x="503" y="197" key="SettingsEditor/71.27.1849.1053/1920.0.1920.1080@71.27.1849.1053" timestamp="1585785634956" />
-    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585903602680">
+    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587986507097">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="2372" y="228" width="1006" height="621" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585695978774" />
-    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/71.27.1849.1053/1920.0.1920.1080@71.27.1849.1053" timestamp="1585903602680" />
+    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/71.27.1849.1053/1920.0.1920.1080@71.27.1849.1053" timestamp="1587986507097" />
     <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1585817619626">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

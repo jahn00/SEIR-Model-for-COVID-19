@@ -11,7 +11,7 @@
 \begin{titlepage}
   \begin{center}
     Title: Pandemic Modeling and Simulation \\
-    Course: Modeling and Simulation \\
+    Course: CS558 Modeling and Simulation \\
     Author: Jeffrey Ahn \\
   \end{center}
 \end{titlepage}
@@ -67,12 +67,9 @@ in a city, state, country etc. (i.e. at a ) is influenced by the spatial
 and mobile patterns within the region. Had the virus been contracted in a low
 population, rural village with little to no transportation in and out, the
 disease would likely have converged (flattened-out) long ago with only a few 
-and local casualities. Then imagine the same disease being released to a handful
+and local casualities. Then consider the same disease being released to a handful
 of people at an international airport and the difference is the latter case
-results in an epidemic. The mobility patterns can be estimated by looking at the
-population distribution grid of Wuhan and imposing this data on a map of the
-Wuhan Metro transit system. This can be used a rough approximation of intercity
-mobility.
+results in an epidemic. 
 
 \begin{center}
   \textbf{3. Model Development}
@@ -106,8 +103,8 @@ a 2D grid of cells. In each cell contains a scalar value representing the cell's
 sub-population. Each sub-population is subdivided into three mutually exclusive
 categories: 1. Susceptible (not Infected), 2. Infected, 3. Removed (either
 recovered from infection or dead). Keep in mind that for any cell at any
-point in time must be zero-sum i.e. Susceptible + Infected + Removed = size of
-sub-population. Every cell in the grid starts off with only Susceptible
+point in time, the total must be static i.e. Susceptible + Infected + Removed = size of
+sub-population at every time step. Every cell in the grid starts off with only Susceptible
 state populations. The way the size of each sub-population was distributed for each cell was
 by imposing a 2D Gaussian curve over the grid. The height at each cell
 of the Gaussian represents the proportion of the global expected population (arbitrarily
@@ -148,12 +145,6 @@ Infected and Infected were converted to Removed.
 
 The procedure would be repeated until no Susceptibles remained or within a
 finite (10-40 days depending on the constraints, more on this later) whichever came first.
-
-\newpage
-
-\begin{center}
-  \textbf{5. Verification and Validation}
-\end{center}
 
 Now that a high-level overview of the model has been explained, we dive deeper
 into the details of the model. We discuss two important modeling choices: How
@@ -215,37 +206,47 @@ at the start. Then a spout from S is opened and pours into I and a spout in I is
 which pours into R. The SIR equations describe the rate at which these spouts allow 
 water to flow into each cylinder.
 
-So for each ``day'' event in the simulation, these set of equations would be
+So for each time step (1 day) in the simulation, equations (1) - (3) would be
 used to calculate the change in each of the three quantities for each sub-population 
 by using Euler's method of integration and letting $\Delta t=1$. In the simulation the
 three values for S, I, and R are stored in three separate grids and for any cell
 ${(i,j)}$, $S_{i,j} + I_{i,j} + R_{i,j} = N_{i,j}$ where $N_{i,j}$ is the total
-size of the sub-population.
+size of the sub-population. \footnote {
+Note, the sum of all sub-populations must be
+static. To formalize:\begin{equation*}
+  S + I + R = N
+\end{equation*}
 
+For all times $t$ and constant N. Then as a consequence:
+
+\begin{equation*}
+  \frac{dS}{dt} + \frac{dI}{dt} + \frac{dR}{dt}  = 0
+\end{equation*}
+}
 
 The following will explain how this model determined the constant values of 
-$\beta$ and $\gamma$. In the study of epidemiology, $R_0$ is the expected number 
-of people in a susceptible population that a single infected person will spread 
-the disease over the entire course of their infection. It is modeled formally by 
-the following equation:
+$\beta$ and $\gamma$. In the study of epidemiology, the canonical constant 
+$R_0$ is the expected number of people in a susceptible population that a single 
+infected person will spread the disease over the entire course of their infection. 
+It is modeled formally by the following equation:
 
 \begin{equation}
   R_0 = \frac{\beta}{\gamma}
 \end{equation}
-Where $\beta$ and $\gamma$ are the daily transmission rates and recovery rates
+Where $\beta$ and $\gamma$ are the transmission rates and recovery rates (per
+unit time)
 respectively. Note that if $R_0$ is less than or equal to one, the disease remains endemic
 (restricted at a controllable level) and for values greater than one, the
 disease can be become epidemic. The value of $R_0$ was taken from various
-sources online which is estimated to be anywhere between 1.9 - 4.0 (taking the
-upper bound of 4 for this simulation but of course can be changed for different runs). 
-The value for $\gamma$ can be estimated by taking the reciprocal of the mean
-infection duration. If $t_r$ is the mean infection period of a disease in days,
-then $t_r^{-1} = \gamma$ is the average rate of recovery which is why in eq (3),
-$\gamma I(t)(\Delta t:=1)$ equals the total number of people recovered on day $t$.
+sources online which is estimated to be anywhere between 1.4 - 5.7 new infetions.
+In my model, the average was taken between these two upper and lower bounds.
+The value for $\gamma$ is estimated by taking the reciprocal of the mean
+infection duration, $t_r$. If $t_r$ is the mean infection period of a disease,
+then $t_r^{-1} = \gamma$ is the average rate of recovery which is why eq (3)
+($\gamma I(t)\Delta t$) is the total number of people recovered on day $t$.
 The mean infection period of COVID-19 was taken from various sources and estimated to 
-be around 9 days. Knowing these two parameters, $\beta$ was solved for using eq (4) and estimated to be around $\frac{4}{9}$ which
-can be interpreted as every 9 infected people infects 4 susceptible people every
-day.
+be around 14 days. Knowing these two parameters, $\beta$ could then be solved for using 
+eq (4).
 
 \bigskip
 
@@ -266,36 +267,71 @@ distances.
 \begin{figure}[ht]
   \includegraphics[scale=0.25]{../gaussian_spread/gaussian_spread_1.png}
   \centering
-  \caption{Gaussian intercell spreading. Notice the clusters spreading randomly from
-  the initial points}
+  \caption{Gaussian intercell spreading. Notice the faint random clusters of infection
+    points surrounding the more visible initial points.}
 \end{figure}
 
 The other intercell spreading simulation technique used is a well-known algorithm 
 in computer science called breadth-first search (BFS). Starting from the initial
 (randomly chosen) infected cells, each infected cell targets its 8 most
-immediate neighboring cells. The number of new infection is simulated by applying eq
+immediate neighboring cells (N, E, S, W, and diagonals). 
+The number of new infection is simulated by applying eq
 (1) where $I(t)$ is taken from the center cell and $\frac{S(t)}{N}$ are the neighboring
 cells. The newly infected cells are put into a queue data structure and the procedure is
 repeated until all cells in the grid have been visited. The effect has one that
-looks like the disease is gradually emananting from a source. The reason this
+looks like the disease is gradually and uniformly emananting from a source. The reason this
 method was chosen as an alternative was to simulate the effects of a
 stay-at-home quarantine which is imposed almost globally during the COVID-19
-pandemic. We will see in greater detail in the next section how effectively a
-quarantine can reduce the spread of disease.
+pandemic. BFS only effects immediate neighboring cells and does not allow for
+random jumps in contrast with the Gaussian model. This allows for a much slower
+spread of the disease.
+We will see in greater detail in the next section how effectively such
+a quarantine can reduce the rate the disease spreads.
 
 \begin{figure}[ht]
-  \includegraphics[scale=0.25]{../no_quarantine/no_quarantine_heatmap_3.png}
+  \includegraphics[scale=0.25]{../quarantine/quarantine_heatmap_3.png}
   \centering
   \caption{Breadth-First Search intercell spreading. Notice the more uniform
-  spreading of the infection from the sources.}
+  spreading emananting from the initial points.}
+\end{figure}
+
+\begin{center}
+  \textbf{5. Verification and Validation}
+\end{center}
+
+The model was verified by checking each equation written in source code matched
+with the equations provided by the SIR model. Careful attention was paid to the
+net capacity of each bin S,I,R. Notice that the equations place no restriction
+on their minimal or maximal capcities allowing for greater than total population
+or less than 0 populations after some extended period of time, which is
+obviously impossible in reality. So $min()$ and $max()$ functions were placed
+around each cell capacity to account for this error. Next,
+the simulation took the sum of every cell and for each S, I, R bin and verified 
+that this was always equal to the total population (again zero-sum).
+
+The SIR model is one that is used in the field of epidemiology extensively since
+its inception in the 1920s.
+The approval of domain experts (epidemiologists and mathematicians) and the
+models usage in current studies is an indication of a valid model. A concrete
+example is given below: 
+
+\clearpage
+\begin{figure}[ht]
+  \includegraphics[scale=0.52]{./wuhan_seir.png}
+  \centering
+  \caption{The SEIR model published by the WHO in 2019 specifically for the city
+  of Wuhan and COVID-19. It takes into account factors such as the daily average 
+  inbound and outbound flights.}
 \end{figure}
 
 \begin{center}
   \textbf{6. Model Application and Transition}
 \end{center}
 
-Both the Gaussian and BFS models were simulated using Python. Recall, the
-Gaussian simulation represents a more liberal mobililty pattern than the rigid BFS simulation.
+Both the Gaussian and BFS models were simulated using the Python programming
+language.
+Recall, the Gaussian simulation represents a more liberal mobililty pattern 
+than the rigid BFS simulation.
 Therefore, the Gauss and BFS models can be thought of as a non-quarantine and quarantine
 simulation respectively. But to better simulate a quarantine effect, the values
 of $\beta$ (transmission rate per infected person per day) is reduced for the BFS
@@ -325,33 +361,39 @@ cells are recovering.}
   \centering
   \centering
 \end{figure}
-
 \begin{figure}[ht]
-  \includegraphics[scale=0.75]{../gaussian_spread/gauss_plot.png}
+  \includegraphics[scale=0.7]{../gaussian_spread/gauss_plot.png}
   \centering
   \caption{Gaussian spread. The plot of proportions of S, I, R over a 40 day
   period.}
-  \includegraphics[scale=0.15]{../no_quarantine/no_quarantine_heatmap_0.png}
-  \centering
-  \includegraphics[scale=0.15]{../no_quarantine/no_quarantine_heatmap_1.png}
-  \centering
-  \includegraphics[scale=0.15]{../no_quarantine/no_quarantine_heatmap_2.png}
-  \centering
-  \includegraphics[scale=0.15]{../no_quarantine/no_quarantine_heatmap_3.png}
-  \centering
+\end{figure}
+\begin{figure}[ht]
   \caption{Simulating with BFS. Each image taken every 10 days over a
   40 day period.}
+  \includegraphics[scale=0.15]{../quarantine/quarantine_heatmap_0.png}
+  \centering
+  \includegraphics[scale=0.15]{../quarantine/quarantine_heatmap_1.png}
+  \centering
+\end{figure}
+\begin{figure}[ht]
+  \includegraphics[scale=0.15]{../quarantine/quarantine_heatmap_2.png}
+  \centering
+  \includegraphics[scale=0.15]{../quarantine/quarantine_heatmap_3.png}
+  \centering
 \end{figure}
 
 \begin{figure}[ht]
-  \includegraphics[scale=0.75]{../no_quarantine/no_quarantine_plt.png}
+  \includegraphics[scale=0.7]{../quarantine/quarantine_plt.png}
   \centering
-  \caption{BFS spread. The plot of proportions of S, I, R over a 40 day period.}
-  \includegraphics[scale=0.75]{../combined_spread.png}
+  \caption{BFS spread. The plot of proportions of S, I, R taken every 10 days 
+  over a 40 day period. Notice the almost non-existent growth of infected or
+  removed sub-populations.}
+  \includegraphics[scale=0.7]{../combined_spread.png}
   \centering
-  \caption{A comparison in the total removed over time in each model.}
+  \caption{A comparison in the total removed over time in BFS and Gauss.}
 \end{figure}
 
+\clearpage
 \begin{center}
   \textbf{7. Conclusions and Recommendations}
 \end{center}
@@ -364,5 +406,6 @@ In January 2019, the WHO published a SEIR model specifically for COVID-19 in
 Wuhan. The the new population `E' stands for Exposed, which means a susceptible
 person has been exposed to the disease, but the not . It is an intermediary phase between susceptible and infected.
 
+\newpage
 
 \end{document}
