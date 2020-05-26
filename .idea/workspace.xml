@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d12768b9-4be1-4f23-bbd3-69d3570f4f69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/combined_spread.png" beforeDir="false" afterPath="$PROJECT_DIR$/combined_spread.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gauss_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gauss_plot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/gaussian_spread/gaussian_spread_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infected_cells.png" beforeDir="false" afterPath="$PROJECT_DIR$/infected_cells.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.aux" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.fls" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/latex/project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/latex/project.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_heatmap_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_plt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/no_quarantine/no_quarantine_total_removed_plt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/population_dist.png" beforeDir="false" afterPath="$PROJECT_DIR$/population_dist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_heatmap4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarantine/quarantine_total_removed_plot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/virus_spread.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/virus_spread.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="1a450ea9-ceb2-4578-a36b-dd69d368553a" />
+  <component name="ProjectId" id="1ZrSpcZ6rhA4oCU2H3MW6bytO7t" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d12768b9-4be1-4f23-bbd3-69d3570f4f69" name="Default Changelist" comment="" />
+      <created>1585595904077</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585595904077</updated>
+      <workItem from="1585595905939" duration="6884000" />
+      <workItem from="1585608909630" duration="15179000" />
+      <workItem from="1585644353878" duration="962000" />
+      <workItem from="1585677206351" duration="5452000" />
+      <workItem from="1585694270177" duration="7000000" />
+      <workItem from="1585783090750" duration="234000" />
+      <workItem from="1585783334357" duration="9796000" />
+      <workItem from="1585798619436" duration="8417000" />
+      <workItem from="1585816501964" duration="510000" />
+      <workItem from="1585817201149" duration="2957000" />
+      <workItem from="1585860728697" duration="3403000" />
+      <workItem from="1585894910956" duration="7248000" />
+      <workItem from="1585904251935" duration="10470000" />
+      <workItem from="1585969481531" duration="5595000" />
+      <workItem from="1585975389306" duration="130000" />
+      <workItem from="1586594865886" duration="86000" />
+      <workItem from="1587641498749" duration="2523000" />
+      <workItem from="1587800656658" duration="831000" />
+      <workItem from="1587815700229" duration="215000" />
+      <workItem from="1587985506619" duration="8170000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl" timestamp="1586594906887">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2657" y="283" width="424" height="513" key="FileChooserDialogImpl/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586594906887" />
+    <state width="1874" height="124" key="GridCell.Tab.0.bottom" timestamp="1585677211343">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="124" key="GridCell.Tab.0.bottom/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585677211343" />
+    <state width="1874" height="124" key="GridCell.Tab.0.center" timestamp="1585677211343">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="124" key="GridCell.Tab.0.center/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585677211343" />
+    <state width="1874" height="124" key="GridCell.Tab.0.left" timestamp="1585677211343">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="124" key="GridCell.Tab.0.left/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585677211343" />
+    <state width="1874" height="124" key="GridCell.Tab.0.right" timestamp="1585677211343">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1874" height="124" key="GridCell.Tab.0.right/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585677211343" />
+    <state x="2369" y="174" key="SettingsEditor" timestamp="1587996190183">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="174" key="SettingsEditor/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1587996190183" />
+    <state x="503" y="197" key="SettingsEditor/71.27.1849.1053/1920.0.1920.1080@71.27.1849.1053" timestamp="1585785634956" />
+    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587986507097">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="2372" y="228" width="1006" height="621" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585695978774" />
+    <state x="506" y="249" width="1006" height="647" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/71.27.1849.1053/1920.0.1920.1080@71.27.1849.1053" timestamp="1587986507097" />
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1585817619626">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="237" width="672" height="678" key="search.everywhere.popup/71.27.1849.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585817619626" />
+  </component>
+</project>
